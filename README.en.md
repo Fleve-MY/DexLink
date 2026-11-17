@@ -98,17 +98,6 @@ To prepare release archives with license texts and checksums:
 python tools/package_release.py
 ```
 
-## Repository layout
-
-```text
-app_phone/          Android UI, capture, permissions, input, and file service
-app_pc/             Windows UI, desktop workspace, native video and audio
-packages/dex_link/  Shared Dart wire protocol
-assets/brand/       DexLink brand assets
-tools/              Offline payload preparation and release packaging
-third_party/        Third-party licenses and source notices
-```
-
 ## Feedback and license
 
 Use [Issues](https://github.com/Fleve-MY/DexLink/issues) for bugs and feature requests. Include the app version, OS version, phone model, connection type, and steps to reproduce. Remove personal content and device identifiers before sharing logs.
@@ -116,3 +105,13 @@ Use [Issues](https://github.com/Fleve-MY/DexLink/issues) for bugs and feature re
 Report security issues through [private vulnerability reporting](https://github.com/Fleve-MY/DexLink/security/advisories/new).
 
 DexLink source code uses the [Apache License 2.0](LICENSE). Dependencies retain their own licenses. See [third-party notices](THIRD_PARTY_NOTICES.md).
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=Fleve-MY%2FDexLink&amp;type=date&amp;legend=top-left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Fleve-MY/DexLink&amp;type=date&amp;theme=dark&amp;legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Fleve-MY/DexLink&amp;type=date&amp;legend=top-left" />
+    <img alt="DexLink Star History Chart" src="https://api.star-history.com/chart?repos=Fleve-MY/DexLink&amp;type=date&amp;legend=top-left" />
+  </picture>
+</a>

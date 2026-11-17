@@ -98,17 +98,6 @@ cd ..
 python tools/package_release.py
 ```
 
-## 源码结构
-
-```text
-app_phone/          Android UI、采集、权限、输入与文件服务
-app_pc/             Windows UI、桌面工作区、原生视频与音频
-packages/dex_link/  两端共享的 Dart 协议
-assets/brand/       DexLink 品牌资源
-tools/              离线安装资源准备与发布打包
-third_party/        第三方许可证与来源声明
-```
-
 ## 反馈与许可
 
 通过 [Issues](https://github.com/Fleve-MY/DexLink/issues) 反馈问题或提出功能建议，附上软件版本、系统版本、手机型号、连接方式和复现步骤。日志分享前请删除个人内容与设备信息。
@@ -116,3 +105,13 @@ third_party/        第三方许可证与来源声明
 安全问题请使用 [私密漏洞报告](https://github.com/Fleve-MY/DexLink/security/advisories/new)。
 
 DexLink 源码使用 [Apache License 2.0](LICENSE)，第三方组件沿用各自协议，见 [第三方声明](THIRD_PARTY_NOTICES.md)。
+
+## Star 趋势
+
+<a href="https://www.star-history.com/?repos=Fleve-MY%2FDexLink&amp;type=date&amp;legend=top-left">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Fleve-MY/DexLink&amp;type=date&amp;theme=dark&amp;legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Fleve-MY/DexLink&amp;type=date&amp;legend=top-left" />
+    <img alt="DexLink Star 增长趋势图" src="https://api.star-history.com/chart?repos=Fleve-MY/DexLink&amp;type=date&amp;legend=top-left" />
+  </picture>
+</a>
