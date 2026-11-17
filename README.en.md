@@ -106,6 +106,8 @@ Report security issues through [private vulnerability reporting](https://github.
 
 DexLink source code uses the [Apache License 2.0](LICENSE). Dependencies retain their own licenses. See [third-party notices](THIRD_PARTY_NOTICES.md).
 
+<br><br><br>
+
 <a href="https://www.star-history.com/?repos=Fleve-MY%2FDexLink&amp;type=date&amp;legend=top-left">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Fleve-MY/DexLink&amp;type=date&amp;theme=dark&amp;legend=top-left" />
