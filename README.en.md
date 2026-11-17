@@ -4,7 +4,7 @@
 
 # DexLink
 
-**Control your Android phone with a Windows keyboard and mouse, and organize phone apps in a desktop workspace.**
+**Mirror Android to Windows and control it with a keyboard and mouse, or open phone apps in an independent desktop workspace.**
 
 [简体中文](README.md) · **English**
 
@@ -12,13 +12,30 @@
 [![License](https://img.shields.io/github/license/Fleve-MY/DexLink)](LICENSE)
 [![Source checks](https://github.com/Fleve-MY/DexLink/actions/workflows/ci.yml/badge.svg)](https://github.com/Fleve-MY/DexLink/actions/workflows/ci.yml)
 
-DexLink includes an Android app and a Windows client, connected over a local network or USB tethering. The phone runs apps and encodes video. The PC handles native video presentation, input, and desktop window management.
+DexLink offers **screen mirroring** and an **independent desktop**, powered by an Android app and a Windows client connected over a local network or USB tethering. Apps run on the phone while the PC displays their content and handles keyboard and mouse input.
 
 The current version is **0.1.0 preview**. Physical-device validation has focused on Xiaomi 15 Pro / Android 17. Reports about other devices and Android versions are welcome.
 
-## Interface preview
+## Two modes
 
-The desktop workspace with app shortcuts, a top menu bar, and a bottom Dock.
+| | Screen mirroring | Independent desktop |
+| --- | --- | --- |
+| Display | The phone's current screen, including actions performed on the phone | Phone apps run on independent virtual displays, with windows managed in the PC workspace |
+| Best for | Using phone apps from the PC, presenting the phone screen, and typing | Working with multiple app windows, switching apps, and organizing a desktop |
+| Controls | Mouse clicks, scrolling, keyboard input, and Android navigation | Move, resize, minimize, and restore windows, with a Dock and app search |
+| Phone authorization | Basic mirroring uses Android screen-capture consent and accessibility for input; enhanced mirroring uses Shizuku | Start a Shizuku-compatible manager and authorize DexLink |
+
+### Screen mirroring
+
+View the phone's current screen in a resizable PC window that follows its aspect ratio. Use Back, Home, Recents, and text paste from the PC clipboard. This mode works well for using existing phone apps or presenting actions on the phone.
+
+![DexLink screen mirroring illustration](assets/screenshots/mirroring-preview.png)
+
+*Mirroring illustration based on the existing window layout, using sample notes.*
+
+### Independent desktop
+
+Open phone apps in a desktop workspace. Use app search, shortcuts, and the Dock to switch apps, and manage the position and size of app windows.
 
 ![DexLink desktop interface preview](assets/screenshots/desktop.png)
 
@@ -29,7 +46,7 @@ The desktop workspace with app shortcuts, a top menu bar, and a bottom Dock.
 
 </details>
 
-These interface previews use sample data.
+*The desktop and widget interface previews use sample data.*
 
 ## Download and get started
 
@@ -39,11 +56,12 @@ Download from [Releases](https://github.com/Fleve-MY/DexLink/releases):
 - **Android**: `DexLink-phone.apk`, requiring Android 8.0 or later.
 - **Checksums**: `SHA256SUMS.txt` for verifying downloads.
 
-1. Install and open DexLink on your phone.
-2. For basic mirroring, accept the screen-capture prompt and enable accessibility when prompted for keyboard and mouse control.
-3. For enhanced mirroring or the independent desktop, start a Shizuku-compatible manager and authorize DexLink on the phone.
-4. Connect both devices to the same trusted local network, or enable USB tethering on the phone.
-5. Open the Windows client, select the discovered phone, and connect.
+1. Install the Android app and extract the Windows client.
+2. Connect both devices to the same trusted local network, or enable USB tethering on the phone.
+3. On the phone, select screen mirroring or independent desktop, complete the required authorization, and start streaming.
+4. Open the Windows client, select the discovered phone, and connect.
+
+**Basic mirroring:** accept Android's screen-capture prompt and enable accessibility for keyboard and mouse input. **Enhanced mirroring or independent desktop:** start a Shizuku-compatible manager and authorize DexLink on the phone first.
 
 The Windows connection page also offers **USB phone app installation**. Enable USB debugging and authorize the PC, then select the USB device and install the bundled APKs. The current bundled setup for Android 17 uses Shizuku + Nightzuku. Start the manager and authorize DexLink on the phone after installation.
 
@@ -51,7 +69,7 @@ The Windows connection page also offers **USB phone app installation**. Enable U
 
 | Feature | Details |
 | --- | --- |
-| Screen mirroring | Phone display with mouse, wheel, and text input |
+| Screen mirroring | The phone's current screen with mouse, wheel, text input, and Android navigation |
 | Enhanced control | Real-time mouse and keyboard injection using shell privileges |
 | Independent desktop | App search, Dock, shortcuts, task switching, movable and resizable app windows |
 | Native video | Media Foundation / D3D11 decoding and Flutter textures, with software and compatibility fallbacks |
