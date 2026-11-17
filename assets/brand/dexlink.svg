@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>DexLink</title>
+  <desc>Two connected surfaces form an open D: a mobile panel and a desktop canvas.</desc>
+  <defs>
+    <linearGradient id="tile" x1="48" y1="24" x2="464" y2="512" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#637BEA"/>
+      <stop offset="0.52" stop-color="#465DD1"/>
+      <stop offset="1" stop-color="#383E9D"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="128" y1="132" x2="192" y2="380" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D5F5FF"/>
+      <stop offset="1" stop-color="#8CCFFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#tile)"/>
+  <rect x="1" y="1" width="510" height="510" rx="115" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="2"/>
+  <rect x="120" y="132" width="64" height="248" rx="28" fill="url(#panel)"/>
+  <path d="M216 132H268C340 132 396 185 396 256S340 380 268 380H216V324H266C307 324 338 296 338 256S307 188 266 188H216Z" fill="#FFFFFF"/>
+</svg>

@@ -1,0 +1,23 @@
+name: dex_phone
+description: "DexLink phone side: shares a desktop-mode display over USB/Wi-Fi"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dex_link:
+    path: ../packages/dex_link
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/brand/dexlink.png

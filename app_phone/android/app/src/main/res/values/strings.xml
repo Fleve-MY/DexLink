@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DexLink</string>
+    <string name="accessibility_label">DexLink 鼠标键盘</string>
+    <string name="accessibility_description">把电脑端的鼠标点击和键盘输入转发到手机屏幕。只在镜像模式下使用；不会上传或保存你屏幕上的内容。</string>
+</resources>

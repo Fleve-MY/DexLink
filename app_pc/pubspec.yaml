@@ -1,0 +1,31 @@
+name: dex_pc
+description: "DexLink PC client: shows the phone desktop as a native window"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dex_link:
+    path: ../packages/dex_link
+  # Video uses the native Media Foundation renderer, with external FFmpeg
+  # available as a compatibility fallback.
+  file_selector: any
+  path: any
+  # Direct FFI access to the Windows clipboard: file drops and images are not
+  # visible through Flutter's text-only clipboard API.
+  ffi: ^2.1.0
+  crypto: ^3.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/brand/dexlink.png

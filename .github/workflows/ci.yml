@@ -1,0 +1,43 @@
+name: Source checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: source-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  analyze:
+    name: Analyze source
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: subosito/flutter-action@1a449444c387b1966244ae4d4f8c696479add0b2 # v2
+        with:
+          flutter-version: '3.47.5'
+          channel: stable
+          cache: true
+      - name: Resolve dependencies
+        run: |
+          flutter pub get --directory app_phone --enforce-lockfile
+          flutter pub get --directory app_pc --enforce-lockfile
+          dart pub get --directory packages/dex_link --enforce-lockfile
+      - name: Analyze shared protocol
+        working-directory: packages/dex_link
+        run: dart analyze --fatal-infos
+      - name: Analyze Android UI
+        working-directory: app_phone
+        run: flutter analyze --no-pub --fatal-infos
+      - name: Analyze Windows UI
+        working-directory: app_pc
+        run: flutter analyze --no-pub --fatal-infos
+      - name: Check Python build scripts
+        run: python -m py_compile tools/prepare_usb_bundle.py tools/package_release.py

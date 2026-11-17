@@ -1,0 +1,36 @@
+name: Bug report / 问题反馈
+description: Report a reproducible problem / 反馈可复现问题
+title: "[Bug] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: DexLink version / 软件版本
+      placeholder: "0.1.0 preview"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment / 使用环境
+      description: Windows version, GPU, phone model, Android/ROM version, connection type, and mirror/desktop mode.
+      placeholder: Windows 11, GPU, phone model, Android version, Wi-Fi or USB tethering, desktop mode
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce / 复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior / 预期与实际表现
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or sanitized logs / 截图或已脱敏日志
+      description: Remove private content, tokens, device identifiers, and personal paths before sharing.
