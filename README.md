@@ -16,6 +16,21 @@ DexLink 由 Android 手机端和 Windows 客户端组成，通过局域网或 US
 
 当前版本为 **0.1.0 预览版**。主要真机验证环境为小米 15 Pro / Android 17，其他系统与机型的适配情况欢迎通过 Issue 反馈。
 
+## 界面预览
+
+独立桌面：应用快捷方式、顶部菜单与底部 Dock。
+
+![DexLink 独立桌面界面预览](assets/screenshots/desktop.png)
+
+<details>
+<summary>查看便签、待办、时钟和日历组件</summary>
+
+![DexLink 桌面组件界面预览](assets/screenshots/widgets.png)
+
+</details>
+
+以上为使用示例数据的界面预览。
+
 ## 下载与开始使用
 
 前往 [Releases](https://github.com/Fleve-MY/DexLink/releases) 下载：

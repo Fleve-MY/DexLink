@@ -16,6 +16,21 @@ DexLink includes an Android app and a Windows client, connected over a local net
 
 The current version is **0.1.0 preview**. Physical-device validation has focused on Xiaomi 15 Pro / Android 17. Reports about other devices and Android versions are welcome.
 
+## Interface preview
+
+The desktop workspace with app shortcuts, a top menu bar, and a bottom Dock.
+
+![DexLink desktop interface preview](assets/screenshots/desktop.png)
+
+<details>
+<summary>View notes, tasks, clock, and calendar widgets</summary>
+
+![DexLink desktop widget interface preview](assets/screenshots/widgets.png)
+
+</details>
+
+These interface previews use sample data.
+
 ## Download and get started
 
 Download from [Releases](https://github.com/Fleve-MY/DexLink/releases):
